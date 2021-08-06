@@ -1,0 +1,24 @@
+
+Aim:
+
+Create a program that chooses a team given a budget before the first gameweek
+Update the team weekly (if necessary) with one free transfer
+Choose a captain and vice captain for each week
+Won't include consideration for powerups/wildcards
+
+Method:
+
+Need to create heuristic for how good players are of players
+Ideally want to maximise overall heuristic within a budget
+
+Could pick best team possible, then remove players with lower level replacements till budget is met
+
+Measure:
+ Average Points per week in previous season
+ Only count weeks where minutes are greater than 0
+
+
+Select best players by measure
+Remove weakest players and replace with next cheapest option if over budget
+May need to consider price when removing, to avoid having a really cheap team with some star players
+
